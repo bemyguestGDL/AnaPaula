@@ -1,0 +1,56 @@
+footer {
+    position: relative;
+    background: url("../img/bg-footer.png");
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+    padding-top:80px;
+    .cont-rsvp {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: rgba(227, 148, 163, 0.6);
+        width: 80%;
+        margin: auto;
+        border-radius: 50px;
+        .cont-txt-footer {
+            h2 {
+                color: #fff;
+                font-size: 5rem;
+                text-align: center;
+                margin: 20px 0;
+            }
+            p {
+                text-align: center;
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+        form{
+            display:grid;
+            align-content:center;
+            gap:10px;
+            input,button{
+                text-align:center;
+                margin:auto;
+                width:50%;
+                border:none;
+                border-radius:5px;
+                font-size:1.5rem;
+                padding:10px 20px;
+            }
+            button{
+                width:58%;
+            }
+            button{
+                color:#fff;
+                background: #80c0ae;
+            }
+        }
+    }
+    .cont-derechos{
+        position: absolute;
+        bottom:0;
+        left:0;
+    }
+}

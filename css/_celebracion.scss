@@ -1,0 +1,56 @@
+.cont-celebracion {
+    padding: 60px 0;
+    background: #fff;
+    .cont-text-celebracion {
+        width: 75%;
+        margin: auto;
+        .txt-celebracion {
+            margin: 0;
+            margin-bottom: 60px;
+        }
+    }
+    .celebracion-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        width: 60%;
+        margin: auto;
+        .cont-tarjeta {
+            &:hover figure {
+                transform: perspective(600px) rotateY(180deg);
+            }
+            figure {
+                margin: 0;
+                position: relative;
+                transition: all 0.5s ease;
+                transform-style: preserve-3d;
+                transform: perspective(600px) rotateY(0deg);
+                .frente,
+                .detras {
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    transition: all 0.5s ease;
+                }
+                .frente {
+                    display: block;
+                }
+                .detras {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: perspective(600px) rotateY(180deg);
+                }
+            }
+        }
+        .a-btn-mapa {
+            margin-top: 40px;
+            display: block;
+            background: #80c0ae;
+            color: #fff;
+            text-align: center;
+            font-size: 2rem;
+            padding: 15px 30px;
+        }
+    }
+}
